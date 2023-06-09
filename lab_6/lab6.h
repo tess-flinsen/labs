@@ -15,7 +15,6 @@ public:
     SetElement(const T& value) : data(value), next(nullptr) {}
 };
 
-#include <iostream>
 
 template <typename T>
 class HashSet {

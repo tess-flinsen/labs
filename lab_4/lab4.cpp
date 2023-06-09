@@ -59,7 +59,7 @@ ComplexNumber& ComplexNumber::operator++() { // префіксний ++ для �
 }
 
 ComplexNumber ComplexNumber::operator++(int) { // постфіксний ++ для інкрементування уявної частини числа
-    ComplexNumber old(*this); 
+    ComplexNumber old(*this);  // збереження початкового значення об'єкта
     double realPart, imaginaryPart;
     toAlgebraicForm(realPart, imaginaryPart);
     ++imaginaryPart;
